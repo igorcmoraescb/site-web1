@@ -1,17 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <title>Como fazer um site?</title>
     </head>
     <body>
         <h1>Isso é um título</h1>
         <h2>Isso aqui é um subtítulo que eu posso usar por exemplo para detalhar brevemente o assunto do título.</h2>
+        <h3>Referências e material de apoio</h3>
+        <h4>Conteúdo multimídia</h4>
+        <p>Para essa disciplina, o principal material de apoio é um canal do YouTube chamado <a href="https://www.youtube.com/@CursoemVideo/featured">Curso em Vídeo</a>. Nesse canal, há várias playlists dos mais variados assuntos. Especificamente sobre essa disciplina, existe um curso de HTML5 e CSS3 com 5 módulos. Não necessariamente veremos os 5 módulos, vamos avançando até onder der.</p>
+        <p><strong>IMPORTANTE:</strong> Esse não é um material definitivo para a disciplina. Pode ser que algumas coisas ditas lá não se aplicarão aqui, e vice-versa. Não vai mudar muita coisa, mas só deixo esse aviso para lembrar a vocês que <strong>a autoridade máxima sou eu.</strong></p>
+        <p>Para quem gostar de estudar por livros, segue algumas recomendações:</p>
+        <h4>Conteúdo textual</h4>
+        <h5>Use a Cabeça! HTML e CSS</h5>
+        <p>Esse livro possui uma linguagem extremamente coloquial e frequentemente usa de alguns artifícios dinâmicos para quebrar a quinta parede e assim interagir com o leitor.</p>
+        <h5>Crie seu próprio site - Nate Cooper e Kim Gee</h5>
+        <p>Esse é ainda mais focado em ter uma leitura leve, já que boa parte dele é no formato de história em quadrinhos. Não traz muita complexidade, mas pode ser uma boa alternativa para despertar o interesse em quem gosta desse tipo de abordagem.</p>
+        <h5>Sites e documentações</h5>
+        <p>Já para quem gosta de conteúdo textual, mas está procurando uma abordagem mais formal, o caminho é estudar através de sites que utilizam o formato de documentação.</p>
+        <p>O primeiro deles é <a href="https://www.w3.org/">o site da W3C</a>, o órgão oficial regulador da web. É a fonte de todos os conteúdos, então será bastante completo. Porém, o conteúdo é extremamente extenso, com uma linguagem muito técnica e em uma divisão difícil de navegação. <a href="https://www.w3c.br/">Existe também uma versão em português</a>, mas ela não tem todos os tópicos da versão em inglês.</p>
+        <p>Por último mas não menos importante, o site <a href="https://www.w3schools.com/">W3Schools</a>. Esse site também é em inglês, mas é EXCELENTE. Abordagem simplificada, design agradável, exemplos práticos do uso de cada tag e navegação intuitiva. Recomendo inclusive para quem não gosta de material textual, utilize esse site para consultas pontuais sobre uma determinada tag ou parâmetro. <strong>Mas muito cuidado: se vocês usarem o Google Translate para traduzir o conteúdo desse site, algumas tags serão traduzidas também. Se vocês referenciarem no código as tags traduzidas, o código do site de vocês ficará errado.</strong></p>
         <h3>Explicação das tags</h3>
-        <p>A hierarquia de títulos vai do h1 ao h6. Não é permitido usar um título de hierarquia mais baixa sem que tenha ocorrências na mesma página de outros títulos de hierarquia mais alta.</p>
+        <em>Antes de falar de tags: Existe um comando que deve ser colocado em todo arquivo HTML, que é <!DOCTYPE html>. Isso não é uma tag, é uma configuração.</em>
+        <p>Começaremos pelas tags de configuração. A tag html cria o espaço padrão para que um conteúdo seja interpretado como um conteúdo HTML. Usaremos obrigatoriamente um parâmetro lang, que receberá a sigla do idioma do site (no nosso caso, pt-br).</p>
+        <p>Mais uma tag puramente de configuração é a meta, que serve para configurar muitas coisas diferentes. Cada configuração ficará em uma tag meta, então vamos criar uma para cada configuração ao invés de usarmos uma única tag meta como parâmetro. A primeira será para configurar o charset, que é basicamente o tipo de caracteres que o site usará (nosso padrão é o UTF-8). A segunda será para configurar a responsividade do site, e aqui é copiar e colar mesmo: <meta name="viewport" content="width=device-width, initial-scale=1.0">. <strong>Em HTML temos algumas tags que não possuem fechamento, reparem que meta é uma delas.</strong></p>
+        <p>Para completar as configurações, temos a tag head, title e body, que é obrigação de vocês saber o que são porque é a base da base.</p>
+        <p>Começando as tags de conteúdo de fato, a hierarquia de títulos vai do h1 ao h6. Não é permitido usar um título de hierarquia mais baixa sem que tenha ocorrências na mesma página de outros títulos de hierarquia mais alta.</p>
         <p>Geralmente essas tags são utilizadas para divisão de seções de um artigo, por exemplo as páginas da Wikipedia. Outro uso recorrente das tags h, especificamente as h1 e h2, é em sites de notícias. É muito comum esse tipo de site ter o título de uma notícia e embaixo uma frase que aborda o tema mais importante dela.</p>
         <p>Além das tags h, outra tag que vimos é a tag p, que cria parágrafos. O resto das tags são mais como tags de configuração e estrutura de código: html, head, title e body.</p>
-        <h3>Enunciado da atividade 1</h3>
-        <p>Para essa atividade, vocês devem começar a criação da página inicial do site. Toda página inicial deve ter o mesmo nome de arquivo, index.html</p>
-        <p>Utilize as tags de estrutura e configuração, e depois disso crie um conteúdo textual com base no tema desse site. Vocês devem utilizar de forma correta e coerente seguindo os seguintes requisitos: no mínimo usar as tags h1 a h3 e também 3 parágrafos. O conteúdo pode usar mais tags h e ter mais parágrafos, desde que mantenha a coerência semântica do uso dessas tags.</p>
-        <p>Faça o upload do site de vocês pelo GitHub, até às 23:59 de domingo (13/08). Essa atividade terá o valor de 4 pontos, e não acumula. Perdeu, já era.</p>
+        <p>Para encaminhar os usuários a uma outra página, seja ela interna ou externa, é utilizada a tag a. A tag a possui um parâmetro obrigatório, que é o href, onde será colocado o destino desse encaminhamento.</p>
+        <p>Já para a criação de listas, conheceremos três tags: ul, ol e li. A tag ul cria um espaço para listas não-ordenadas, e a tag ol cria um espaço para listas ordenadas. Na parte interna desse espaço, ou seja, entre a tag de abertura e de fechamento, estarão tags li, que são itens de lista. Cada item de lista, ordenada ou não ordenada, deve estar entre a tag de abertura e de fechamento de uma tag li.</p>
+        <p>Para finalizar a semana, reparem que duas outras tags foram utilizadas no site, a tag strong e a tag em. A primeira é utilizada para dar destaque semântico e por padrão visual negrito a um texto, e a segunda é para sinalizar que aquele trecho deve ser lido com uma de uma maneira diferente, enfaticamente e não necessariamente sequencial ao restante do conteúdo, além de por padrão ter o visual itálico. Não usem só pelo apelo visual! Se quiserem fazer isso, isso deve ser configurado com CSS.</p>
+        <h3>Enunciado das entregas</h3>
+        <ul>
+            <li><a href="entrega1.html">Entrega 1</a></li>
+            <li><a href="entrega2.html">Entrega 2</a></li>
+        </ul>
     </body>
 </html>
