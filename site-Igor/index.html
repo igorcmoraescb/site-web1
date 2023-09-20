@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Como fazer um site?</title>
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul type="disc">
+                <li><a href="index.html">Início</a></li>
+                <li>Entregas</li>
+                <ul type="circle">
+                    <li><a href="entrega1.html" rel="next">Entrega 1</a></li>
+                    <li><a href="entrega2.html">Entrega 2</a></li>
+                    <li><a href="entrega3.html">Entrega 3</a></li>
+                    <li><a href="entrega4.html">Entrega 4</a></li>
+                    <li><a href="entrega5.html">Entrega 5</a></li>
+                    <li><a href="entrega6.html">Entrega 6</a></li>
+                </ul>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <p>Bem-vindo ao meu site sobre como fazer sites. Abaixo você vai enfrentar uma leitura bem chata, então para deixar um pouco mais agradável dê play nesse som. É instrumental, então não vai atrapalhar a atenção de vocês.</p>
+        <audio controls loop>
+            <source src="media/Jack O'Reilly-The-Synth-Wars.mp3">
+            <source src="media/Jack-O_Reilly-The-Synth-Wars.ogg">
+            <source src="media/Jack-O_Reilly-The-Synth-Wars.wav">
+            <p>Desculpa, não carregou!</p>
+        </audio>
+        <hr>
+        <h1>Isso é um título</h1>
+        <h2>Isso aqui é um subtítulo que eu posso usar por exemplo para detalhar brevemente o assunto do título.</h2>
+        <h3>Referências e material de apoio</h3>
+        <h4>Conteúdo multimídia</h4>
+        <p>Para essa disciplina, o principal material de apoio é um canal do YouTube chamado <a href="https://www.youtube.com/@CursoemVideo/featured" target="_blank" rel="external">Curso em Vídeo</a>. Nesse canal, há várias playlists dos mais variados assuntos. Especificamente sobre essa disciplina, existe um curso de HTML5 e CSS3 com 5 módulos. Não necessariamente veremos os 5 módulos, vamos avançando até onder der.</p>
+        <p><strong>IMPORTANTE:</strong> Esse não é um material definitivo para a disciplina. Pode ser que algumas coisas ditas lá não se aplicarão aqui, e vice-versa. Não vai mudar muita coisa, mas só deixo esse aviso para lembrar a vocês que <strong>a autoridade máxima sou eu.</strong></p>
+        <p>Para quem gostar de estudar por livros, segue algumas recomendações:</p>
+        <h4>Conteúdo textual</h4>
+        <h5>Use a Cabeça! HTML e CSS</h5>
+        <p>Esse livro possui uma linguagem extremamente coloquial e frequentemente usa de alguns artifícios dinâmicos para quebrar a quinta parede e assim interagir com o leitor.</p>
+        <h5>Crie seu próprio site - Nate Cooper e Kim Gee</h5>
+        <p>Esse é ainda mais focado em ter uma leitura leve, já que boa parte dele é no formato de história em quadrinhos. Não traz muita complexidade, mas pode ser uma boa alternativa para despertar o interesse em quem gosta desse tipo de abordagem.</p>
+        <h5>Sites e documentações</h5>
+        <p>Já para quem gosta de conteúdo textual, mas está procurando uma abordagem mais formal, o caminho é estudar através de sites que utilizam o formato de documentação.</p>
+        <p>O primeiro deles é <a href="https://www.w3.org/" target="_blank" rel="external">o site da W3C</a>, o órgão oficial regulador da web. É a fonte de todos os conteúdos, então será bastante completo. Porém, o conteúdo é extremamente extenso, com uma linguagem muito técnica e em uma divisão difícil de navegação. <a href="https://www.w3c.br/" target="_blank" rel="external">Existe também uma versão em português</a>, mas ela não tem todos os tópicos da versão em inglês.</p>
+        <p>Por último mas não menos importante, o site <a href="https://www.w3schools.com/" target="_blank" rel="external">W3Schools</a>. Esse site também é em inglês, mas é EXCELENTE. Abordagem simplificada, design agradável, exemplos práticos do uso de cada tag e navegação intuitiva. Recomendo inclusive para quem não gosta de material textual, utilize esse site para consultas pontuais sobre uma determinada tag ou parâmetro. <strong>Mas muito cuidado: se vocês usarem o Google Translate para traduzir o conteúdo desse site, algumas tags serão traduzidas também. Se vocês referenciarem no código as tags traduzidas, o código do site de vocês ficará errado.</strong></p>
+        <h3>Explicação das tags</h3>
+        <h4>Tags de configuração</h4>
+        <em>Antes de falar de tags: Existe um comando que deve ser colocado em todo arquivo HTML, que é &lt!DOCTYPE html&gt. Isso não é uma tag, é uma configuração.</em>
+        <p>Começaremos pelas tags de configuração. A tag html cria o espaço padrão para que um conteúdo seja interpretado como um conteúdo HTML. Usaremos obrigatoriamente um parâmetro lang, que receberá a sigla do idioma do site (no nosso caso, pt-br).</p>
+        <p>Mais uma tag puramente de configuração é a meta, que serve para configurar muitas coisas diferentes. Cada configuração ficará em uma tag meta, então vamos criar uma para cada configuração ao invés de usarmos uma única tag meta como parâmetro. A primeira será para configurar o charset, que é basicamente o tipo de caracteres que o site usará (nosso padrão é o UTF-8). A segunda será para configurar a responsividade do site, e aqui é copiar e colar mesmo: <meta name="viewport" content="width=device-width, initial-scale=1.0">. <strong>Em HTML temos algumas tags que não possuem fechamento, reparem que meta é uma delas.</strong></p>
+        <p>Para completar as configurações, temos a tag head, title e body, que é obrigação de vocês saber o que são porque é a base da base.</p>
+        <h4>Conteúdo textual</h4>
+        <p>Começando as tags de conteúdo de fato, a hierarquia de títulos vai do h1 ao h6. Não é permitido usar um título de hierarquia mais baixa sem que tenha ocorrências na mesma página de outros títulos de hierarquia mais alta.</p>
+
+        <iframe width="666" height="315" src="https://www.youtube.com/embed/B5wObgbQJ5A?si=Ru6Pn5xD04VgR_K9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <p>Geralmente essas tags são utilizadas para divisão de seções de um artigo, por exemplo as páginas da Wikipedia. Outro uso recorrente das tags h, especificamente as h1 e h2, é em sites de notícias. É muito comum esse tipo de site ter o título de uma notícia e embaixo uma frase que aborda o tema mais importante dela.</p>
+        <p>Além das tags h, outra tag que vimos é a tag p, que cria parágrafos. O resto das tags são mais como tags de configuração e estrutura de código: html, head, title e body.</p>
+        <p>Para encaminhar os usuários a uma outra página, seja ela interna ou externa, é utilizada a tag a. A tag a possui um parâmetro obrigatório, que é o href, onde será colocado o destino desse encaminhamento. Para saber sobre o uso de outros parâmetros adicionais, sugiro acessar a página da tag a no W3Schools.</p>
+        <p>Já para a criação de listas, conheceremos três tags: ul, ol e li. A tag ul cria um espaço para listas não-ordenadas, e a tag ol cria um espaço para listas ordenadas. Um parâmetro associado a tag ul e ol é o type, que define o símbolo da listagem, e vocês devem configurá-lo.Na parte interna desse espaço, ou seja, entre a tag de abertura e de fechamento, estarão tags li, que são itens de lista. Cada item de lista, ordenada ou não ordenada, deve estar entre a tag de abertura e de fechamento de uma tag li.</p>
+        <p>Reparem também que duas outras tags foram utilizadas no site, a tag strong e a tag em. A primeira é utilizada para dar destaque semântico e por padrão visual negrito a um texto, e a segunda é para sinalizar que aquele trecho deve ser lido com uma de uma maneira diferente, enfaticamente e não necessariamente sequencial ao restante do conteúdo, além de por padrão ter o visual itálico. Não usem só pelo apelo visual! Se quiserem fazer isso, isso deve ser configurado com CSS.</p>
+        <h4>Imagens</h4>
+        <p>O terceiro tópico da nossa disciplina é referente a imagens em um site. Iniciaremos falando sobre um tipo de imagem muito específico: o <strong>favicon</strong>.</p>
+        <p>Em cada aba aberta dos navegadores, consta o nome da página (contido na tag title) e o favicon, que é um ícone que identifica o site, basicamente uma logo. Essa imagem é chamada de favicon (uma abreviação do inglês "favorite icon"), e possui algumas convenções para seu uso correto.</p>
+        <p>Por padrão (e vocês usarão o padrão na disciplina), o arquivo dessa imagem deve se chamar favicon, tudo em minúscula, e deve ter a extensão <strong>.ico</strong>. Sendo uma imagem muito pequena, vocês devem se atentar a uma outra convenção que é mais uma informação óbvia do que uma regra em si: a imagem deve ser minimalista, já que ela se apresenta de forma minúscula no navegador. Por último, vocês devem encarar essa imagem como a logo do site, e por isso não faz sentido usar vários ícones diferentes em páginas do mesmo site. Escolha uma, e coloque ela em todas as páginas.</p>
+        <p>Para escolher um favicon, vocês devem pegar uma imagem convencional e converter para .ico, e para essa tarefa eu indico <a href="https://favicon.io/" target="_blank" rel="external">esse site</a>. Uma outra indicação, mas só para quem tiver perdido na escolha do favicon, é <a href="https://www.iconarchive.com/" target="_blank" rel="external">esse outro site</a> em que vocês podem pesquisar imagens já quase prontas para serem utilizadas como favicon (algumas não terão a extensão .ico, então vocês devem baixá-las e convertê-las). <strong>O ícone deve ter relação direta com o assunto do site!</strong></p>
+        <p>Para inserir o ícone no site, é utilizada a tag link, que é uma tag de configuração e é usado para inserir várias coisas num site. Acessem o código-fonte de qualquer página do meu site para terem acesso ao código correto, não faz sentido ficar decorando isso.</p>
+        <p>Agora para imagens que vão aparecer realmente como conteúdo do site, trabalharemos com dois tipos de extensão, jpg e png. Para imagens que precisam do recurso de transparência, utilizem png, e em todos os outros casos utilizem jpg. Vocês devem configurar pelo menos dois parâmetros para essa tag: o caminho da imagem e a descrição da imagem.</p>
+        <p>Cada uma dessas imagens deve ser colocada individualmente dentro de uma tag picure. Essa tag picture cria um campo de configuração para cada imagem, e dentro dela estará a imagem em tamanho padrão (grande) na tag img e outros tamanhos menores nas tags source. <strong>A ordem importa! Sempre da menor para a maior.</strong>. Algumas configurações adicionais são necessárias para a configuração desses tamanhos variáveis, por isso vejam o exemplo no código-fonte dessa página. Vamos padronizar os tamanhos da seguinte forma: imagens grandes terão a largura de 1000px, médias de 700px e pequenas de 300px. Vocês podem criar esses diferentes tamanhos com <a href="https://www.iloveimg.com/resize-image" target="_blank" rel="external">esse site</a> (deixe marcada a primeira opção e desmarcada a segunda).</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/html-css-p.png">
+            <source media="(max-width: 1050px)" srcset="imagens/html-css-m.png">
+            <img src="imagens/html-css-g.png" alt="Uma analogia diferenciando html e css, em que o primeiro é representado por um pássaro sem penas e o segundo com um pássaro com belas penas.">
+        </picture>
+        <h4>Mídias</h4>
+        <p>Outro tópico importantíssimo na criação de sites é como inserir outros tipos de mídia que não imagens. Começando pelo mais simples, links para download, basta utilizar a tag a com o caminho do arquivo como valor do parâmetro href, não tem segredo. Para ilustrar a funcionalidade de download, <a href="media/um-siri-fazendo-barra.mp4">aqui está um video de um siri fazendo barra</a>.</p>
+        <p>A coisa fica um pouquinho mais burocrática ao inserir audios. Para fazer isso, usaremos primeiramente uma tag audio, que deve ter obrigatoriamente um parâmetro controls, sem valor atribuído. Dentro dessa tag audio vamos inserir algumas outras coisas.</p>
+        <p>A tag source, utilizada para tamanhos variáveis de imagens, será utilizada aqui também mas com alguns detalhes diferentes. Para audio, não traremos o parâmetro media, e o parâmetro que indica o tamanho do arquivo não será srcset, e sim o tradicional src. Vou poupá-los dos detalhes técnicos do porquê da existência de várias extensões diferentes para audio, mas vamos obrigatoriamente trazer para os sites 3 delas: mp3, ogg e wav. Por isso, o(s) audio(s) inserido(s) nos sites devem ter 3 sources dentro da tag audio. Não se pode colocar audios diferentes dentro da mesma tag audio! Ao invés disso, vocês devem pegar um audio e criar as versões de extensões diferentes por meio de conversões. Você pode achar um bom conversor grátis <a href="https://www.google.com/" target="_blank" rel="external">clicando aqui</a>. Por fim, depois das tags source mas ainda dentro da tag audio, devemos inserir um parágrafo de contingência, que será carregado caso por algum motivo a mídia de audio não puder ser carregada.</p>
+        <h4>CSS</h4>
+        <p>Na aula que vem, montaremos toda a estrutura CSS para que nosso site fique com cara de siste. Por enquanto, a única coisa que vocês devem fazer é criar o CSS base e definir a paleta de cores. Para a criação e incorporação do arquivo, crie uma pasta chamada css e dentro dela um arquivo chamado style.css</p>
+        <p>Já para a incorporação do arquivo no site, coloque em cada uma das páginas o comando referente a segunda tag link que se encontra nos códigos das páginas do meu site.</p>
+        <p>Dentro desse arquivo, vocês vão inserir as cores referentes a paleta de cores que vocês utilizarão no site de vocês, em hexadecimal. Reparem no meu código CSS que cada cor está atribuída a uma variável, então vocês devem fazer o mesmo (eu coloquei como nome das variáveis nomes de cores mesmo, mas pode ser qualquer coisa).</p>
+        <p>Para definir uma paleta de cores, vocês podem utilizar <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">esse</a> ou <a href="https://coolors.co/" target="_blank" rel="external">esse</a> site. Lembrem-se de verificar se as cores não afetam a experiência de daltônicos. Vocês devem definir 5 cores para a paleta de cores, e o arquivo CSS conterá essas 5 cores + o preto e o branco, que são cores coringa.</p>
+    </body>
+</html>
